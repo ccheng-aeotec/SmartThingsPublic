@@ -24,14 +24,14 @@ metadata {
 		capability "Temperature Measurement"
 		capability "Relative Humidity Measurement"
 		capability "Configuration"
-        capability "forgottenreturn26666.dewpointMeasurement"
+        	capability "forgottenreturn26666.dewpointMeasurement"
         
 		attribute "dewpoint", "number"
 		attribute "updateNeeded", "string"
 		attribute "parameter1", "number"
 		attribute "parameter2", "number"
 		attribute "parameter4", "number"
-        attribute "parameter64", "number"
+        	attribute "parameter64", "number"
         
 		fingerprint mfr:"0371", prod:"0002", model:"0009", deviceJoinName: "Temperature Humidity Sensor", mnmn: "0ALy", vid: "f680ed17-d31d-3aef-a888-1a7ffbceb1cc" //EU //aerQ Sensor
 		fingerprint mfr:"0371", prod:"0102", model:"0009", deviceJoinName: "Temperature Humidity Sensor", mnmn: "0ALy", vid: "f680ed17-d31d-3aef-a888-1a7ffbceb1cc" //US //aerQ Sensor
@@ -92,7 +92,7 @@ metadata {
         	}
         
         	valueTile("humidity", "device.humidity", inactiveLabel: false, width: 2, height: 2) {
-				state "humidity", label: '${currentValue}% humidity', unit: "%"
+			state "humidity", label: '${currentValue}% humidity', unit: "%"
 		}
         
         	valueTile("dewpoint", "device.dewpoint", inactiveLabel: false, width: 2, height: 2) {
