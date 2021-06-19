@@ -188,9 +188,9 @@ private getButtonAttributesMap() {
             0: "pushed",
             2: "held",
             3: "double",
-			4: "pushed_3x",
-			5: "pushed_4x",
-			6: "pushed_5x"
+	    4: "pushed_3x",
+            5: "pushed_4x",
+            6: "pushed_5x"
     ]} else {[
             0: "pushed",
             1: "held"
@@ -202,5 +202,5 @@ private isEverspring() {
 }
 
 private isWallMote7() {
-	zwaveInfo.model.equals("0016")
+    zwaveInfo.model.equals("0016")
 }
